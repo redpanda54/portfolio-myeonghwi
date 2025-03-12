@@ -6,7 +6,7 @@ import jakarta.persistence.*
 class Introduction(
     content: String,
     isActive: Boolean
-) : BaseEntity<Any?>() {
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

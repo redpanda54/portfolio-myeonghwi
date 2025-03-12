@@ -3,7 +3,10 @@ package com.myeonghwi.portfolio.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class ExperienceDetail(content: String, isActive: Boolean) : BaseEntity<Any?>() {
+class ExperienceDetail(
+    content: String,
+    isActive: Boolean
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

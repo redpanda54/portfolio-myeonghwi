@@ -10,7 +10,7 @@ class Achivement(
     achievedDate: LocalDate?,
     host: String,
     isActive: Boolean
-) : BaseEntity<Any?>() {
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -7,7 +7,7 @@ class Link(
     name: String,
     content: String,
     isActive: Boolean
-) : BaseEntity<Any?>() {
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

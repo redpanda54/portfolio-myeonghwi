@@ -3,7 +3,11 @@ package com.myeonghwi.portfolio.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class ProjectDetail(content: String, url: String?, isActive: Boolean) : BaseEntity<Any?>() {
+class ProjectDetail(
+    content: String,
+    url: String?,
+    isActive: Boolean
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

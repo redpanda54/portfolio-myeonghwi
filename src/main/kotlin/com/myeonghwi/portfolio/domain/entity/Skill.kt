@@ -8,7 +8,7 @@ class Skill(
     name: String,
     type: String,
     isActive: Boolean
-) : BaseEntity<Any?>() {
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

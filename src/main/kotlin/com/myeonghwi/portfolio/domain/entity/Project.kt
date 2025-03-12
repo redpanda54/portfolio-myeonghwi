@@ -11,7 +11,7 @@ class Project(
     endYear: Int?,
     endMonth: Int?,
     isActive: Boolean
-) : BaseEntity<Any?>() {
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -4,7 +4,9 @@ import jakarta.persistence.*
 import jakarta.servlet.http.HttpServletRequest
 
 @Entity
-class HttpInterface(httpServletRequest: HttpServletRequest) : BaseEntity<Any?>() {
+class HttpInterface(
+    httpServletRequest: HttpServletRequest
+) : BaseEntity() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
