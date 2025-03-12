@@ -7,10 +7,10 @@ import java.time.LocalDate
 class Achivement(
     title: String,
     description: String,
-    achivedDate: LocalDate?,
+    achievedDate: LocalDate?,
     host: String,
-    isActive: Boolean,
-) : BaseEntity() {
+    isActive: Boolean
+) : BaseEntity<Any?>() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +21,7 @@ class Achivement(
 
     var description: String = description
 
-    var achivedDate: LocalDate? = achivedDate
+    var achievedDate: LocalDate? = achievedDate
 
     var host: String = host
 

@@ -11,7 +11,7 @@ class Experience(
     endYear: Int?,
     endMonth: Int?,
     isActive: Boolean
-) : BaseEntity() {
+) : BaseEntity<Any?>() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

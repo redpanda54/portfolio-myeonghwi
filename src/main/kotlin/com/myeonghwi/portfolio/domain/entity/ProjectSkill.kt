@@ -3,7 +3,7 @@ package com.myeonghwi.portfolio.domain.entity
 import jakarta.persistence.*
 
 @Entity
-class ProjectSkill(project: Project, skill: Skill) : BaseEntity() {
+class ProjectSkill(project: Project, skill: Skill) : BaseEntity<Any?>() {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

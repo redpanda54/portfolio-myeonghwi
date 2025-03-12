@@ -7,7 +7,7 @@ import org.springframework.data.annotation.LastModifiedDate
 import java.time.LocalDateTime
 
 @MappedSuperclass
-abstract class BaseEntity {
+abstract class BaseEntity<LocalDate> {
 
     @CreatedDate
     @Column(nullable = false, updatable = false)
