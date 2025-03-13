@@ -26,15 +26,15 @@ class DataInitilizer<Achievement>(
     fun initializeData() {
         log.info("스프링이 실행되었습니다. 테스트 데이터를 초기화합니다.")
 
-        val achievement = mutableListOf<Achivement>(
-            Achivement(
+        val achievement = mutableListOf<com.myeonghwi.portfolio.domain.entity.Achievement>(
+            Achievement(
                 title = "2022 Catkao 해커톤 최우수상",
                 description = "고양이 쇼핑몰 검색 서비스의 아키텍처, 데이터 모델링, API 개발 역할 수행",
                 host = "캣카오",
                 achievedDate = LocalDate.of(2022, 8, 1),
                 isActive = true,
             ),
-            Achivement(
+            Achievement(
                 title = "정보처리기사",
                 description = "자료구조, 운영체제, 알고리즘, 데이터베이스 등",
                 host = "한국산업인력공단",

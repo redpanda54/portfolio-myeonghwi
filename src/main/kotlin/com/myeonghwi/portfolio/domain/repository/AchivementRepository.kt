@@ -1,11 +1,11 @@
 package com.myeonghwi.portfolio.domain.repository
 
-import com.myeonghwi.portfolio.domain.entity.Achivement
+import com.myeonghwi.portfolio.domain.entity.Achievement
 import org.springframework.data.jpa.repository.JpaRepository
 
-interface AchivementRepository : JpaRepository<Achivement, Long> {
+interface AchivementRepository : JpaRepository<Achievement, Long> {
 
     // select * from achievement where is_active = :isActive
-    fun findAllByIsActive(isActive: Boolean): List<Achivement>
+    fun findAllByIsActive(isActive: Boolean): List<Achievement>
 
 }

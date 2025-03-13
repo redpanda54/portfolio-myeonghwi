@@ -4,7 +4,7 @@ import jakarta.persistence.*
 import java.time.LocalDate
 
 @Entity
-class Achivement(
+class Achievement(
     title: String,
     description: String,
     achievedDate: LocalDate?,
