@@ -12,7 +12,7 @@ import java.time.LocalDate
 @Component
 @Profile(value = ["default"])
 class DataInitilizer<Achievement>(
-    private val achievementRepository: AchivementRepository,
+    private val achievementRepository: AchievementRepository,
     private val introductionRepository: IntroductionRepository,
     private val linkRepository: LinkRepository,
     private val skillRepository: SkillRepository,
